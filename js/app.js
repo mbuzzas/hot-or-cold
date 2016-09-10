@@ -72,8 +72,10 @@ $(document).ready(function(){
   		if (distanceFromNumber === 0) {
   			$('#feedback').text("You guessed it!!!");
   			wonGame = true;
+  		} else if (distanceFromNumber < 2) {
+  			$('#feedback').text("Scolding!");
   		} else if (distanceFromNumber < 4) {
-  			$('#feedback').text(" Very Hot!");
+  			$('#feedback').text("Very Hot!");
   		} else if (distanceFromNumber < 8) {
   			$('#feedback').text("Hot");
   		} else if (distanceFromNumber < 13) {
